@@ -1,15 +1,23 @@
+package stu;
+
+import p2.Address;
+
 public class Student extends Object{
     static int pass_mark = 150;
 
-    String rollno;
-    String name;
+    private String rollno;
+    protected String name;
     Address address;
     int age;
     int mark1;
     int mark2;
     int mark3;
 
-    Student (String n, String r){
+    public Student(){
+        super();
+    }
+
+    public Student (String n, String r){
         super ();
         System.out.println(" CREATING NEW STUDENT OBJECT ");
         name= n;
@@ -18,12 +26,12 @@ public class Student extends Object{
     }
 
 
-    Student (String name, String rollno, int age){
+    public Student (String name, String rollno, int age){
         this (name, rollno);
         this.age =age;
     }
 
-    Student (String name, String rollno, int age, int mark1, int mark2, int mark3, Address address){
+    public Student (String name, String rollno, int age, int mark1, int mark2, int mark3, Address address){
         this(name, rollno, age) ;
         this.mark1=mark1;
         this.mark2=mark2;
@@ -40,7 +48,7 @@ public class Student extends Object{
         return totalMark()/3;
     }
 
-    void  display (){
+    public void  display (){
         System.out.println("Rollno :"+ rollno);
         System.out.println("Name :"+ name);
         System.out.println("Age :"+ age);

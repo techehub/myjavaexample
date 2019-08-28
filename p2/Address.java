@@ -1,3 +1,5 @@
+package p2;
+
 public class Address extends Object{
 
     String houseno;

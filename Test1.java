@@ -1,3 +1,7 @@
+import cls.ClassroomStudent;
+import p2.Address;
+import stu.Student;
+
 public class Test1 {
 
     public static void main(String[] args) {
@@ -6,8 +10,14 @@ public class Test1 {
         Address a2= new Address("222", "bbbbb", "TCR", "KL");
         Student s1 = new Student("123", "ANIL", 22, 33,44,55, a1);
         Student s2 = new Student("456", "KABEER", 21, 45, 55, 65, a2);
-        s1.display();
-        s2.display();
+        //s1.name="2323";
+        //s1.display();
+        //s2.display();
+
+
+        ClassroomStudent c1 = new ClassroomStudent("aaaaa", "222", "123");
+        c1.display();
+
     }
 
 }
